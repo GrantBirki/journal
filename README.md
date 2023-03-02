@@ -1,5 +1,7 @@
 # blog 🌍
 
+test
+
 [![deploy](https://github.com/GrantBirki/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/GrantBirki/blog/actions/workflows/deploy.yml)
 
 My personal blog about all things
