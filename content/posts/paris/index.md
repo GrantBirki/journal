@@ -8,6 +8,8 @@ cover:
 
 ## Paris
 
+**test**
+
 The whole reason for this trip to Paris was to see a musician that I have seen a few times before. His name is Apashe and I wrote about going to one of his show's in a [previous blog post](/posts/apashe). When I was in [London](/posts/london-and-norway) a few months ago, Apashe announced that he would be playing a show in Paris but this time it would be at the [Bataclan](https://en.wikipedia.org/wiki/Bataclan_(theatre)) theatre and with a full brass ensemble. I had to go!
 
 ### Friday
