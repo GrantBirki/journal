@@ -1,0 +1,106 @@
+:root {
+    --theme: rgb(245, 245, 245);
+    --code-bg: rgb(230, 230, 230);
+    --border: rgb(217, 217, 217);
+    --journal-border-light: rgb(238, 238, 238);
+    --journal-page-bg: rgb(245, 245, 245);
+    --journal-toc-bg: rgb(235, 235, 235);
+    --journal-link: rgb(9, 105, 218);
+    --journal-blockquote-text: rgb(92, 92, 92);
+    --journal-blockquote-border: rgb(72, 72, 72);
+    --journal-gradient-start: #007fef;
+    --journal-gradient-end: #00b3ae;
+}
+
+:root[data-theme="dark"] {
+    --border: rgb(58, 58, 58);
+    --journal-border-light: rgb(51, 51, 51);
+    --journal-page-bg: rgb(29, 30, 32);
+    --journal-toc-bg: rgb(52, 53, 59);
+    --journal-link: rgb(83, 155, 245);
+    --journal-blockquote-text: rgb(132, 132, 132);
+    --journal-blockquote-border: rgb(152, 152, 152);
+    --journal-gradient-start: #007fef;
+    --journal-gradient-end: #00ddd8;
+}
+
+.list {
+    background: var(--journal-page-bg);
+}
+
+tr {
+    border-color: var(--border);
+}
+
+.post-entry {
+    border-color: var(--journal-border-light);
+}
+
+.post-title {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.toc {
+    background: var(--journal-toc-bg);
+}
+
+.md-content a:not(.anchor) {
+    color: var(--journal-link);
+}
+
+.post-content blockquote {
+    margin: 20px 0;
+    padding: 0 14px;
+    color: var(--journal-blockquote-text);
+    border-inline-start: 3px solid var(--journal-blockquote-border);
+}
+
+.post-content code {
+    padding: 0.2em 0.4em;
+    font-size: 85%;
+    border-radius: 6px;
+    font-family: Menlo, Consolas, ui-monospace, monospace;
+}
+
+.entry-content-cozy {
+    margin: 8px !important;
+}
+
+.entry-content-cozy hr {
+    clear: both;
+    padding: 2px;
+    height: 1px;
+    border: 0;
+    margin: -1px 0;
+}
+
+.post-cat-div {
+    margin: 10px 0;
+}
+
+.post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0;
+}
+
+.post-categories li {
+    list-style: none;
+}
+
+.post-categories a {
+    display: block;
+    padding-inline: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    background: linear-gradient(to right, var(--journal-gradient-start), var(--journal-gradient-end));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

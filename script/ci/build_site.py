@@ -9,10 +9,10 @@ import stat
 import subprocess
 import tempfile
 
-# https://github.com/gohugoio/hugo/releases/download/v0.119.0/hugo_0.119.0_checksums.txt
-VERSION = "0.119.0"
+# https://github.com/gohugoio/hugo/releases/download/v0.168.0/hugo_0.168.0_checksums.txt
+VERSION = "0.168.0"
 PACKAGE = f"hugo_extended_{VERSION}_linux-amd64.deb"
-DIGEST = "b88f825992b89915fe1ec46ddc16578d28ca37d17759922620f67adbac04d0d6"
+DIGEST = "b7cd5087c39bf5584e40180bd04fab0c6fb19f2913cd63121da8663e112a08db"
 
 
 def regular_file(root, relative):
