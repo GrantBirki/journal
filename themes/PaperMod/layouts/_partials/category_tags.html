@@ -1,0 +1,19 @@
+{{- $categories := .Language.Params.Taxonomies.category | default "categories" -}}
+{{- with .GetTerms $categories }}
+<div class="post-cat-div">
+  <ul class="post-categories">
+    {{- range . }}
+    {{- $term := . }}
+    {{- with $.Params.categoryColors }}
+      {{- with index . $term.LinkTitle }}
+        <li><a href="{{ $term.Permalink }}" style="background: linear-gradient(to right, {{ .gradientStart }}, {{ .gradientEnd }}); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent">{{ $term.LinkTitle }}</a></li>
+      {{- else }}
+        <li><a href="{{ $term.Permalink }}">{{ $term.LinkTitle }}</a></li>
+      {{- end }}
+    {{- else }}
+      <li><a href="{{ $term.Permalink }}">{{ $term.LinkTitle }}</a></li>
+    {{- end }}
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

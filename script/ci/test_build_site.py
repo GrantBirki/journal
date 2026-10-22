@@ -45,7 +45,7 @@ class BuildTests(unittest.TestCase):
             binary.parent.mkdir(parents=True)
             binary.write_text("fixture")
         elif command[-1] == "version":
-            return SimpleNamespace(stdout="hugo v0.119.0-test+extended linux/amd64")
+            return SimpleNamespace(stdout=f"hugo v{build_site.VERSION}-test+extended linux/amd64")
         else:
             output = Path(command[command.index("--destination") + 1])
             output.mkdir()
