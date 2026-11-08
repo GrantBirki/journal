@@ -38,7 +38,7 @@ jobs:
     steps:
       # https://github.com/github/branch-deploy/blob/d3c24bd92505e623615b75ffdfac5ed5259adbdb/docs/merge-commit-strategy.md
       - name: deployment check
-        uses: grantbirki/branch-deploy@18049b1a468b9a0220663f56017d2ba309d08e6b # pin@v12.3.0
+        uses: grantbirki/branch-deploy@7173dcbb72a30da0148076fade87260ddd1b5e28 # pin@v12.4.2
         id: deployment-check
         with:
           merge_deploy_mode: "true"
